@@ -3,69 +3,88 @@
 <head>
     <title>NASA HUNCH Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #222;
-            background: linear-gradient(270deg, #ffffff, #d7e9ff, #b3d4ff, #e9f1ff);
-            background-size: 600% 600%;
-            animation: gradientShift 12s ease infinite;
-            margin: 0;
-            padding: 0;
-            transition: 0.4s ease-in-out;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #e6edf3;
 
-        body{
-            color: white;
-            background: linear-gradient(270deg, #141e30, #243b55, #1a2a6c, #000428);
-            background-size: 400% 400%;
-        }
+        /* Deep space background */
+        background: radial-gradient(
+            circle at top,
+            #102a43 0%,
+            #0b1c2d 40%,
+            #050b14 100%
+        );
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+        transition: 0.4s ease-in-out;
+    }
 
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: auto;
-            padding: 50px;
-        }
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: auto;
+        padding: 50px 20px;
+    }
 
-        section, .card {
-            margin-bottom: 40px;
-            padding: 20px;
-            border: 1px solid rgba(0,0,0,0.1);
-            border-radius: 10px;
-            background: rgba(255,255,255,0.4);
-            backdrop-filter: blur(4px);
-            transition: 0.4s;
-        }
+    section, .card {
+        margin-bottom: 40px;
+        padding: 25px;
+        border-radius: 12px;
 
-        h1, h2 {
-            font-family: monospace;
-        }
+        /* NASA-style glass panel */
+        background: rgba(15, 35, 60, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(6px);
 
-        h2 {
-            color: rgba(243,79,76,1)
-        }
+        box-shadow: 0 0 20px rgba(27, 108, 255, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        a {
-            color: #3b6dd8;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        a:hover {
-            color: #1e4fb8;
-        }
+    section:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 30px rgba(27, 108, 255, 0.35);
+    }
 
-        body a {
-            color: #60efff;
-        }
-        body a:hover {
-            color: #00ff87;
-        }
+    h1, h2 {
+        font-family: "Courier New", monospace;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        color: #ffffff;
+        border-left: 4px solid #fc3d21; /* NASA red */
+        padding-left: 12px;
+    }
+
+    h2 {
+        color: #fc3d21;
+        margin-top: 30px;
+    }
+
+    p, li {
+        line-height: 1.6;
+        color: #e6edf3;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    a {
+        color: #1b6cff; /* NASA blue */
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #60efff;
+    }
+
+    /* Subtle divider look */
+    section:not(:first-child) {
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
     </style>
 </head>
 <body>
