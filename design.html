@@ -107,6 +107,7 @@
             display: block;
             margin: 20px auto;
             border-radius: 10px;
+            display: inline-block;
         }
 
         section:not(:first-child) {
@@ -140,36 +141,69 @@
     </section>
 
     <section>
-        <h1>3D Model</h1>
-        <img src="images/solidworks_model.png" alt="SolidWorks rover model">
+        <h1>Software</h1>
         <p>
-            Our design uses a rocker-bogie suspension system with a hollow electronics body.
-            Grouser wheels will provide traction.
+            The rover prototype uses python and arduino coding in order to translate a click from the user into movement from the arduino.
         </p>
+        
+        <h2>Clicking</h2>
+        <p>
+            The first step of this process is taking the input from the user. Our design uses the python library tkinter, allowing for the display of a window that can take inputs.
+        </p>
+        <img src="images/click.png" alt="Click file screenshot">
 
-        <img src="images/printed_model.png" alt="3D printed rover model">
+        <h2>Triangulating</h2>
         <p>
-            The 3D printed prototype provides a solid foundation for future iterations,
-            though wheels and electronics integration are still in progress.
+            Once the click from the user has been taken and translated into relative coordinates, they're sent through the triangulation software. This takes 
+            those relative coordinates and changes them into an angle and a distance.
         </p>
+        <img src="images/triangulating.png" alt="Triangulation file screenshot">
+
+        <h2>Sending and Receiving the Data</h2>
+        <p>
+            Since the arduino is the thing that controls the servos and motors, next that data is sent to the arduino. The python Serial library is used to do this, and the arduino interprets the data.
+        </p>
+        <img src="images/sending_data.png" alt="Sending data file screenshot" width="694">
+        <img src="images/receiving_data.png" alt="Arduino file screenshot" width="449">
     </section>
 
     <section>
         <h1>Electronics</h1>
         <p>
-            The rover prototype uses Arduino-based control systems with servos for steering
-            and DC motors for movement.
+            The rover prototype uses Arduino-based control systems with servos for steering and DC motors for movement, along with a raspberry pi that coordinates that movement.
         </p>
 
-        <p>
-            A concept lighting model demonstrates how landscape illumination will function.
-        </p>
+        <img src="images/placeholder.png" alt="Image of electronics" width="571.5">
+        <img src="images/placeholder.png" alt="Image of electronics" width="571.5">
+    </section>
 
-        <img src="images/lights.png" alt="Landscape lighting demo">
+    <section>
+        <h1>3D Model</h1>
         <p>
-            This demonstration cycles RGB LED combinations via button input,
-            representing how the final system may behave.
+            Our design uses a rocker-bogie suspension system with a hollow body that we use to store the electronics.
+            The front has slots for the servos to go, which will also attach to the wheels, allowing them to turn.
         </p>
+        <img src="images/solidworks_model.png" alt="SolidWorks rover model">
+
+        <p>
+            Here's what our 3D printed body looks like after being printed out without any electronics attached.
+        </p>
+        <img src="images/printed_model.png" alt="3D printed rover model">
+    </section>
+
+    <section>
+        <h1>Simulation</h1>
+        <p>
+            In order to test our rover design in a varied amount of environments we decided to use a simulation. This allows us to test without using 
+            unnecessary resources, and test things that wouldn't be feasible in a normal environment, like different gravities. 
+        </p>
+        <img src="images/placeholder.png" alt="Simulation screenshot">
+
+        <p>
+            Potentially more body text
+            Potentially more body text
+        </p>
+        <img src="images/placeholder.png" alt="Second image">
     </section>
 
 </div>
