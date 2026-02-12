@@ -28,6 +28,28 @@
             padding: clamp(20px, 5vw, 60px);
         }
 
+        .button {
+            background-color: rgba(15, 35, 60, 0.75);
+            color: white;
+            margin-bottom: 40px;
+            margin-right: 20px;
+            padding: 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 24px;
+
+            box-shadow: 0 0 20px rgba(27, 108, 255, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 30px rgba(27, 108, 255, 0.35);
+        }
+
         section {
             margin-bottom: 40px;
             padding: 25px;
@@ -41,17 +63,12 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        section:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 0 30px rgba(27, 108, 255, 0.35);
-        }
-
-        h1, h2 {
+        h1, h2, a {
             font-family: "Courier New", monospace;
             letter-spacing: 1px;
         }
 
-        h1 {
+        h1, a {
             color: #ffffff;
             border-left: 4px solid #fc3d21;
             padding-left: 12px;
@@ -113,9 +130,12 @@
 
 <div class="container">
 
+    <a href="index.html" class="button">Home</a>
+    <a href="design.html" class="button">Design</a>
+    <a href="team.html" class="button">Team</a>
+
     <section>
         <h1>B.U.T.T.E.R - HERA Moonscape</h1>
-
     </section>
 
     <section>
@@ -232,39 +252,6 @@
         </p>
         <p>
             Designs must be collapsible and usable by operators wearing thick EVA gloves.
-        </p>
-    </section>
-
-    <section>
-        <h1>3D Model</h1>
-        <img src="images/solidworks_model.png" alt="SolidWorks rover model">
-        <p>
-            Our design uses a rocker-bogie suspension system with a hollow electronics body.
-            Grouser wheels will provide traction.
-        </p>
-
-        <img src="images/printed_model.png" alt="3D printed rover model">
-        <p>
-            The 3D printed prototype provides a solid foundation for future iterations,
-            though wheels and electronics integration are still in progress.
-        </p>
-    </section>
-
-    <section>
-        <h1>Electronics</h1>
-        <p>
-            The rover prototype uses Arduino-based control systems with servos for steering
-            and DC motors for movement.
-        </p>
-
-        <p>
-            A concept lighting model demonstrates how landscape illumination will function.
-        </p>
-
-        <img src="images/lights.png" alt="Landscape lighting demo">
-        <p>
-            This demonstration cycles RGB LED combinations via button input,
-            representing how the final system may behave.
         </p>
     </section>
 
