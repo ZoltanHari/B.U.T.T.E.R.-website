@@ -79,6 +79,7 @@
             color: #fc3d21;
             margin-top: 30px;
             font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 0px;
         }
 
         p, li {
@@ -107,6 +108,12 @@
             display: block;
             margin: 20px auto;
             border-radius: 10px;
+        }
+        
+        .small_container {
+            display: flex;
+            align-items: left;
+            gap: 20px;
         }
 
         section:not(:first-child) {
@@ -150,25 +157,35 @@
         <h1>Members</h1>
 
         <h2>Dexter Blanchard</h2>
-        <ul>
-            <li>Description 1</li>
-            <li>Description 2</li>
-        </ul>
-        <img src="images/dexter.png" alt="Image of Dexter Blanchard">
+        <div class="small_container">
+            <p><img src="images/dexter.jpeg" alt="Image of Dexter Blanchard" width="300"></p>
+            <ul>
+                <br>
+                <li>Traingulation Programmer</li>
+                <li>3D Designer
+                </li>
+            </ul>
+        </div>
 
         <h2>Zoltan Hari</h2>
-        <ul>
-            <li>Description 1</li>
-            <li>Description 2</li>
-        </ul>
-        <img src="images/zoltan.png" alt="Image of Zoltan Hari">
+        <div class="small_container">
+            <p><img src="images/zoltan.jpeg" alt="Image of Dexter Blanchard" width="300"></p>
+            <ul>
+                <br>
+                <li>Landscape Programmer</li>
+                <li>Website Designer</li>
+            </ul>
+        </div>
 
         <h2>Carson Rickard</h2>
-        <ul>
-            <li>Description 1</li>
-            <li>Description 2</li>
-        </ul>
-        <img src="images/carson.png" alt="Image of Carson Rickard">
+        <div class="small_container">
+            <p><img src="images/carson.jpeg" alt="Image of Dexter Blanchard" width="300"></p>
+            <ul>
+                <br>
+                <li>Minesweeper</li>
+                <li>Professional Do-Nothing Guy</li>
+            </ul>
+        </div>
         
     </section>
 </div>
