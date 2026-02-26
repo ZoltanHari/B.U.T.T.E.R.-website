@@ -132,86 +132,45 @@
 <div class="container">
 
     <a href="index.html" class="button">Home</a>
-    <a class="button">Design</a>
-    <a href="next.html" class="button">Next Steps</a>
+    <a href="design.html" class="button">Design</a>
+    <a class="button">Next Steps</a>
     <a href="team.html" class="button">Team</a>
 
     <section>
-        <h1>Our Design</h1>
+        <h1>Next Steps</h1>
 
     </section>
 
     <section>
         <h1>Software</h1>
         <p>
-            The rover prototype uses python and arduino coding in order to translate a click from the user into movement from the arduino.
+            Our goal with out software moving forward is to create a more complex triangulation system. This means adding obstacles that the triangulation system will automatically avoid. 
+            Along with that, we would like to update our user input interface in order to make it more intuitive and visual appealing.
         </p>
-        
-        <h2>Clicking</h2>
-        <p>
-            The first step of this process is taking the input from the user. Our design uses the python library tkinter, allowing for the display of a window that can take inputs.
-        </p>
-        <img src="images/click.png" alt="Click file screenshot">
-
-        <h2>Triangulating</h2>
-        <p>
-            Once the click from the user has been taken and translated into relative coordinates, they're sent through the triangulation software. This takes 
-            those relative coordinates and changes them into an angle and a distance.
-        </p>
-        <img src="images/triangulating.png" alt="Triangulation file screenshot">
-
-        <h2>Sending and Receiving the Data</h2>
-        <p>
-            Since the arduino is the thing that controls the servos and motors, next that data is sent to the arduino. The python Serial library is used to do this, and the arduino interprets the data.
-        </p>
-        <img src="images/sending_data.png" alt="Sending data file screenshot" width="694">
-        <img src="images/receiving_data.png" alt="Arduino file screenshot" width="449">
     </section>
 
     <section>
         <h1>Electronics</h1>
-        <p>The rover prototype uses:</p>
-        <ul>
-            <li>Arduino-based control systems using:</li>
-            <ul>
-                <li>Servos for turning</li>
-                <li>DC motors for movement</li>
-            </ul>
-            <li>A raspberry pi that:</li>
-            <ul>
-                <li>Coordinates the movement of the rovers</li>
-                <li>Stores video data</li>
-            </ul>
-        </ul>
-
+        <p>
+            For our physical electronics, there isn't that much that we'd like to do. However, one thing that is part of our plan moving forward is to move all of our software onto a raspberry pi. 
+            This is in order to make our rovers be able to function away from a computer, by having a smaller computer attached.
+        </p>
     </section>
 
     <section>
         <h1>3D Model</h1>
         <p>
-            Our design uses a rocker-bogie suspension system with a hollow body that we use to store the electronics.
-            The front has slots for the servos to go, which will also attach to the wheels, allowing them to turn.
+            While our CAD model is pretty much done, we would like to attach all of our electronics and software to our phsyical model, merging all of our different parts together. 
+            If this requires updating the model, then that will be done as well.
         </p>
-        <img src="images/solidworks_model.png" alt="SolidWorks rover model">
-
-        <p>
-            Here's what our 3D printed body looks like after being printed out without any electronics attached.
-        </p>
-        <img src="images/printed_model.png" alt="3D printed rover model">
     </section>
 
     <section>
         <h1>Simulation</h1>
         <p>
-            In order to test our rover design in a varied amount of environments we decided to use a simulation. This allows us to test without using 
-            unnecessary resources building difficult landscapes, and test things that wouldn't be feasible in a normal environment such as different gravities. 
+            As we go forward, we will continue to work on our simulation, adding new terrain and testing new environments. One specific things that that includes is testing with different levels of gravity, 
+            which will allow us to get a more accurate impression of how the rovers will actually work.
         </p>
-        <video width="380" height="300" controls=""> <source src="videos/sim_vid1.mp4"> </video>
-        
-        <p>
-            Rover was built from scratch in Webots simulation software to have an accurate rocker bogie suspension system that would function just like it would in real life.
-        </p>
-        <video width="380" height="300" controls=""> <source src="videos/sim_vid2.mp4"> </video>
     </section>
 
 </div>
